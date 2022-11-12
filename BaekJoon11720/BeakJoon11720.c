@@ -11,3 +11,19 @@ N개의 숫자가 공백 없이 쓰여있다. 이 숫자를 모두 합해서 출
 #예제출력1
 15
 */
+#include <stdio.h>
+int main(void) {
+    char a=0;
+    int sum=0;
+    while(1) {
+        scanf("%c", &a);
+        if(a!='\n') {
+            sum += a-'0';
+        }
+        else {
+            printf("%d", sum);
+            break;
+        }
+    }
+    return 0;
+}
